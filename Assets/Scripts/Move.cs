@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Move : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Move : MonoBehaviour
         transform.Translate(speed * Time.deltaTime * 1f, speed * Time.deltaTime * move_steer(), 0);
         if(transform.position.x > 8f)
         {
+            SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
             GameObject.Destroy(gameObject);
         }
     }
