@@ -11,6 +11,11 @@ Acara ini merupakan bagian dari [BEKRAF Developer Day 2017 - Bali](https://www.d
 * [Tizen Studio](https://developer.tizen.org/development/tizen-studio/download "Download Tizen Studio")
 * Jika menggunakan device Tizen, download driver [Samsung Android USB Driver for Windows](http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows "Download driver Samsung")
 
+### Assest Unity :
+* [Asset 2D Car Traffic Racer Free](https://www.assetstore.unity3d.com/en/#!/content/18450 "Download Asset 2D Car Traffic Racer Free")
+* [Asset F1 Speed Car Pack](https://www.assetstore.unity3d.com/en/#!/content/56098 "Download Asset F1 Speed Car Pack")
+* [Asset Traffic Control Resource Pack](https://www.assetstore.unity3d.com/en/#!/content/20085 "Download Asset Traffic Control Resource Pack")
+
 ### Tizen Certificate
 Berikut ini beberapa ID Device yang dapat ditambahkan supaya nantinya game Anda dapat direview oleh tim Dicoding:
 * 2.0#Iag89nZm4VuTJ3RJ5uo7kvEUFxs=
