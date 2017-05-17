@@ -7,7 +7,7 @@ public class DestroyMatch : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!Input.GetMouseButton(0))
+        if (Input.GetMouseButtonUp(0))
         {
             if (collision.name.Contains(detect.name))
             {
