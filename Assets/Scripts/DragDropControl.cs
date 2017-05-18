@@ -41,7 +41,10 @@ public class DragDropControl : MonoBehaviour
         if(Input.GetMouseButtonUp(0))
         {
             _mouseState = false;
-            target.transform.localScale = Vector3.one * 3;
+            if ((target != null) && (target.tag == "Cars"))
+            {
+                target.transform.localScale = Vector3.one * 3;
+            }
         }
 
         if(_mouseState && (target != null))

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class DestroyMatch : MonoBehaviour
 {
     [SerializeField]
-    private Text txtScore;
     public GameObject detect;
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -14,8 +13,7 @@ public class DestroyMatch : MonoBehaviour
             if (collision.name.Contains(detect.name))
             {
                 Destroy(collision.gameObject);
-                Data.Score += 10;
-                txtScore.text = Data.Score.ToString();
+                Data.Score += 5;
             }
         }
     }
