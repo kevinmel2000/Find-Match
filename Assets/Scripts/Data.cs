@@ -3,10 +3,15 @@ using UnityEngine.UI;
 
 public class Data : MonoBehaviour
 {
+    // tampilkan score ke scene gameplay
     public Text txtScore;
+    private void Update()
+    {
+        txtScore.text = score.ToString();
+    }
 
+    // tempat penyimpanan data score
     private static int score = 0;
-
     public static int Score
     {
         get
@@ -20,8 +25,17 @@ public class Data : MonoBehaviour
         }
     }
 
-    private void Update()
+    private static string carName = "";
+    public static string CarName
     {
-        txtScore.text = score.ToString();
+        get
+        {
+            return carName;
+        }
+
+        set
+        {
+            carName = value;
+        }
     }
 }

@@ -12,8 +12,11 @@ public class DestroyMatch : MonoBehaviour
         {
             if (collision.name.Contains(detect.name))
             {
-                Destroy(collision.gameObject);
-                Data.Score += 5;
+                if(collision.name == Data.CarName)
+                {
+                    Destroy(collision.gameObject);
+                    Data.Score += 5;
+                }
             }
         }
     }

@@ -32,6 +32,7 @@ public class DragDropControl : MonoBehaviour
             if ((target != null) && (target.tag == "Cars"))
             {
                 _mouseState = true;
+                Data.CarName = target.name;
                 target.transform.localScale = Vector3.one * 4;
                 screenSpace = Camera.main.WorldToScreenPoint(target.transform.position);
                 offset = target.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z));
@@ -43,6 +44,7 @@ public class DragDropControl : MonoBehaviour
             _mouseState = false;
             if ((target != null) && (target.tag == "Cars"))
             {
+                Data.CarName = "";
                 target.transform.localScale = Vector3.one * 3;
             }
         }
