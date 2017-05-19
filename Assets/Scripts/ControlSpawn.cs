@@ -23,7 +23,7 @@ public class ControlSpawn : MonoBehaviour
         waitShow2 = Random.Range(1f, 4f);
         waitShow3 = Random.Range(0.5f, 5f);
 
-        waitTime = Random.Range(6f, 10f);
+        waitTime = Random.Range(4f, 4f);
     }
 
     private void Update()
