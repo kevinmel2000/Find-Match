@@ -11,6 +11,11 @@ public class GameScript : MonoBehaviour
         txtScore.text = "Kamu mendapatkan " + Data.Score.ToString() + " poin";
     }
 
+	private void Update()
+	{
+		if(Input.GetKeyUp(KeyCode.Escape)) Application.Quit();
+	}
+
     public void PlayGame()
     {
         Data.Score = 0;
